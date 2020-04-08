@@ -10,6 +10,7 @@ import {
 } from "reactstrap";
 import Link from "next/link";
 import React from "react";
+import { STRAPI_URL } from "../../lib/globals";
 
 const RestaurantCard = ({
   id,
@@ -29,7 +30,7 @@ const RestaurantCard = ({
       <CardImg
         top={true}
         style={{ height: 250 }}
-        src={storybook ? imageURL : `http://localhost:1337${imageURL}`}
+        src={storybook ? imageURL : `${STRAPI_URL + imageURL}`}
       />
       <CardBody>
         <CardTitle>{name}</CardTitle>

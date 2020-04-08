@@ -19,6 +19,7 @@ import {
 } from "reactstrap";
 import Cart from "../components/Cart/Cart";
 import defaultPage from "../hocs/defaultPage";
+import { STRAPI_URL } from "../lib/globals";
 
 class Restaurants extends React.Component {
   constructor(props) {
@@ -49,7 +50,7 @@ class Restaurants extends React.Component {
                     <CardImg
                       top={true}
                       style={{ height: 250 }}
-                      src={`http://localhost:1337${res.image.url}`}
+                      src={`${STRAPI_URL + res.image.url}`}
                     />
                     <CardBody>
                       <CardTitle>{res.name}</CardTitle>
