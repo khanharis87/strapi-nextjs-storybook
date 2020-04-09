@@ -6,10 +6,10 @@
   },
   "csp": {
     "enabled": true,
-    "policy": [{
+    "policy": [
+      {
         "img-src": "'self' http:"
-      },
-      "block-all-mixed-content"
+      }
     ]
   },
   "p3p": {
@@ -32,27 +32,11 @@
   "cors": {
     "enabled": true,
     "origin": "*",
-    "expose": [
-      "WWW-Authenticate",
-      "Server-Authorization"
-    ],
+    "expose": ["WWW-Authenticate", "Server-Authorization"],
     "maxAge": 31536000,
     "credentials": true,
-    "methods": [
-      "GET",
-      "POST",
-      "PUT",
-      "PATCH",
-      "DELETE",
-      "OPTIONS",
-      "HEAD"
-    ],
-    "headers": [
-      "Content-Type",
-      "Authorization",
-      "X-Frame-Options",
-      "Origin"
-    ]
+    "methods": ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS", "HEAD"],
+    "headers": ["Content-Type", "Authorization", "X-Frame-Options", "Origin"]
   },
   "ip": {
     "enabled": false,
