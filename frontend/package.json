@@ -23,7 +23,7 @@
     "isomorphic-unfetch": "^3.0.0",
     "js-cookie": "^2.2.1",
     "jwt-decode": "^2.2.0",
-    "next": "^9.3.4",
+    "next": "^11.1.0",
     "next-apollo": "^3.1.10",
     "next-with-apollo": "^5.0.0",
     "react": "^16.13.1",
